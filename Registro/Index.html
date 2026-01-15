@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    
+    
+    <title>Página de Login</title>
+</head>
+<nav>
+</nav>
+<body>
+    <container class="step-1">
+        <h1>Faça seu Registro</h1>
+        <form id='registerContForm' action="/Registro/register.js" method="post">
+            <label for="username">Crie seu Login</label>
+            <input type="email" id="username" name="username" placeholder="Seu Login" required>
+            <label for="password">Crie sua senha</label>
+            <div class="password">
+            <input type="password" id="password" name="password" placeholder="Senha" required>
+            <button type="button" id="togglePasswordRegister">Mostrar</button>
+            </div>
+
+            <button id="btnRegister" type="submit">Crie sua conta</button>
+        </form>
+    </container>
+
+     <container class="step-2">
+        <h1>Faça seu Login</h1>
+        <form id='loginContForm'  method="post">
+            <label for="usernameLogin">Seu Login</label>
+            <input type="email" id="usernameLogin" name="username" placeholder="Seu Login" required>
+            <label for="passwordLogin">Sua senha</label>
+            <div class="passwordLogin">
+            <input type="password" id="passwordLogin" name="password" 
+            placeholder="Senha" required>
+            <button type="button" id="togglePasswordLogin">Mostrar</button>
+            </div>
+
+            <button id="btnlogin" type="submit">Entrar</button>
+        </form>
+    </container>
+    <container class="step-3">
+        <div id="message">Obrigado por fazer o teste!</div>
+        <button id="refresh">Reiniciar</button>
+    </container>
+
+    <script src="./register.js"></script>
+</body>
+<footer>
+    <p>©2026 Dev: Gustavo A. Volpato</p>
+</html>

@@ -1,0 +1,193 @@
+/* fonte da pagina */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* cores e estilos basicos */
+:root{
+    --primary-color: #501476;
+    --secondary-color: #ffffff;
+    --background-color: #353535;
+    --text-color: #333333;
+}
+
+
+* {
+    font-size: 0,5em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    margin-top: 20px;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 300px;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    font-weight: 600;   
+}
+
+container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    }
+
+  /* estilo do link de registro na pagina de login */
+.Login{
+    color: var(--primary-color);
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+.Login a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.Login a:hover {
+    text-decoration: underline;
+}
+
+/* estilo do campo de senha com botao de mostrar senha */
+
+.password {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#showPassword {
+    position: absolute;
+    left: 7.5em;
+    bottom: 1.2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-weight: 300;
+    width: 10px 0px;
+}
+
+/* step 2 e 3 logar */
+
+
+.step-2 {
+    display: none;
+}   
+
+.step-3 {
+    margin-top: 20px;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 150px;
+    display: none;
+}   
+
+#message {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: var(--text-color);
+    text-align: center;
+    width: 100%;
+}
+
+#refresh {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* estilo do campo de senha com botao de mostrar senha login */
+#togglePasswordLogin {
+    width: 50px;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 28.7em;
+    right: 57em;
+    background-color: none;
+    background: none;
+    color: var(--primary-color);
+    border: none;
+    align-items: center;
+
+}
+
+#togglePasswordRegister{
+    width: 50px;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 1.5em;
+    left: 20em;
+    background-color: none;
+    background: none;
+    color: var(--primary-color);
+    border: none;
+    align-items: center;
+
+}
